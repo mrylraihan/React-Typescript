@@ -8,12 +8,19 @@ type InputProps = {
 
 }
 
-function Input(props:InputProps) {
-    console.log(props)
+function Input({id, label, ...props}:InputProps) {
+    // console.log(id)
+    // console.log(label)
+    // console.log(props)
+	const objTest = {name:"name", body:"body", details:"details"}
+	console.log(objTest)
+	const {name , ...objTestRemainder} = objTest
+	console.log(objTestRemainder)
+
 	return (
 		<p>
-			<label htmlFor={props.id}>Type: {props.label}</label>
-			<input id={props.id} type={props.type}/>
+			<label htmlFor={id}>Type: {label}</label>
+			<input id={id} {...props}/>
 		</p>
 	)
 }
