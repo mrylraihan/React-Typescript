@@ -21,12 +21,16 @@ function App() {
 				<FormTest onSubmit={OnSubmitHandler} />
 			</div>
 			<div>
+				<p>
 				<Button el='button' onClick={() => console.log('hello')}>
 					A Button
 				</Button>
+				</p>
+				<p>
 				<Button el='anchor' href='https://nike.com'>
 					A Link
 				</Button>
+				</p>
 			</div>
 		</>
 	)
