@@ -2,6 +2,7 @@
 import RefPractice from './components/RefPractice'
 import Input from './components/Input';
 import { useRef } from 'react';
+import FormRef from './components/FormRef';
 function App() {
 	const inputRef = useRef<HTMLInputElement>(null)
 	const printInput = ()=>{
@@ -14,6 +15,9 @@ function App() {
 			</main>
 			<main>
 				<RefPractice />
+			</main>
+			<main>
+				<FormRef/>
 			</main>
 		</>
 	)

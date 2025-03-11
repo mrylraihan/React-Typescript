@@ -2,8 +2,8 @@ import React, { useRef } from 'react'
 
 function RefPractice() {
     const testRef = useRef<HTMLInputElement>(null)
-    const printValue = ()=> console.log(testRef.current!.value)
     const printCurrent = ()=> console.log(testRef.current)
+    const printValue = ()=> console.log(testRef.current!.value)
   return (
     <div>
         <input type="text" ref={testRef}/>
